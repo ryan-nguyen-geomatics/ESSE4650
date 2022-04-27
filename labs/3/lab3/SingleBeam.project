@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wrk:Workspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wrk="http://www.caris.com/wrk/1.0">
+  <wrk:Metadata>
+    <wrk:Title/>
+    <wrk:Abstract/>
+    <wrk:CreatedOn>2022-02-18T15:13:11Z</wrk:CreatedOn>
+    <wrk:CreatedBy>longryan</wrk:CreatedBy>
+    <wrk:LastModifiedOn>2022-02-18T17:27:02Z</wrk:LastModifiedOn>
+    <wrk:LastModifiedBy>longryan</wrk:LastModifiedBy>
+  </wrk:Metadata>
+  <wrk:Sources>
+    <wrk:Source Format="DT_BASE_SURFACE">
+      <wrk:Id>5a6ef8da-3b0a-4f53-aff4-92091307ad0a</wrk:Id>
+      <wrk:Filename>..\..\Documents\CARIS\HIPS and SIPS\Hypack RAW, HSX 02-18-2022 16-13-28\Products_Hypack RAW, HSX 02-18-2022 16-13-28\Hypack RAW, HSX 02-18-2022 16-13-28.csar</wrk:Filename>
+    </wrk:Source>
+    <wrk:Source Format="DT_HIPS">
+      <wrk:Id>83f0ca51-644b-4e33-88ab-c2d0b007027c</wrk:Id>
+      <wrk:Filename>..\..\Documents\CARIS\HIPS and SIPS\Hypack RAW, HSX 02-18-2022 16-13-28\Hypack RAW, HSX 02-18-2022 16-13-28.hips</wrk:Filename>
+    </wrk:Source>
+    <wrk:Source Format="DT_HIPS">
+      <wrk:Id>3b80b3a6-20ee-4225-b89d-08ba5c554d6d</wrk:Id>
+      <wrk:Filename>..\..\Documents\CARIS\HIPS and SIPS\Hypack RAW, HSX 02-18-2022 16-19-17\Hypack RAW, HSX 02-18-2022 16-19-17.hips</wrk:Filename>
+    </wrk:Source>
+    <wrk:Source Format="DT_HIPS">
+      <wrk:Id>01762968-ce4d-43d6-96e0-43388b34f6ff</wrk:Id>
+      <wrk:Filename>lab3.hips</wrk:Filename>
+    </wrk:Source>
+    <wrk:Source Format="DT_BASE_SURFACE">
+      <wrk:Id>def98b0d-e9da-4646-8912-29abdcdde4e6</wrk:Id>
+      <wrk:Filename>SingleBeam_5m.csar</wrk:Filename>
+    </wrk:Source>
+    <wrk:Source Format="DT_SAHOB">
+      <wrk:Id>30469ab2-cf00-4a8e-9c1f-ec2f005c057e</wrk:Id>
+      <wrk:Filename>Soundings.hob</wrk:Filename>
+    </wrk:Source>
+    <wrk:Source Format="DT_BASE_SURFACE">
+      <wrk:Id>312b4f01-ae39-4345-80dc-cdc69304bef7</wrk:Id>
+      <wrk:Filename>Singlebeam_5m_PC.csar</wrk:Filename>
+    </wrk:Source>
+  </wrk:Sources>
+  <wrk:Layers>
+    <wrk:Layer xsi:type="wrk:GOLayerType">
+      <wrk:Name>Contacts</wrk:Name>
+      <wrk:Id>495877a3-ac9f-4eba-9b18-0f5022a567a0</wrk:Id>
+      <wrk:SourceId>83f0ca51-644b-4e33-88ab-c2d0b007027c</wrk:SourceId>
+      <wrk:Attributes>
+        <FeatureCount>0</FeatureCount>
+        <DisplayEdgeNodes>false</DisplayEdgeNodes>
+        <DisplayScale>
+          <MinimumScale>0</MinimumScale>
+          <MaximumScale>2000000000</MaximumScale>
+        </DisplayScale>
+      </wrk:Attributes>
+    </wrk:Layer>
+    <wrk:Layer xsi:type="wrk:GOLayerType">
+      <wrk:Name>Contacts</wrk:Name>
+      <wrk:Id>03df692e-8793-4b86-b0bc-837a73908686</wrk:Id>
+      <wrk:SourceId>01762968-ce4d-43d6-96e0-43388b34f6ff</wrk:SourceId>
+      <wrk:Attributes>
+        <FeatureCount>0</FeatureCount>
+        <DisplayEdgeNodes>false</DisplayEdgeNodes>
+        <DisplayScale>
+          <MinimumScale>0</MinimumScale>
+          <MaximumScale>2000000000</MaximumScale>
+        </DisplayScale>
+      </wrk:Attributes>
+    </wrk:Layer>
+    <wrk:Layer xsi:type="wrk:HIPSFilterLayerType">
+      <wrk:Name>lab3 Track Lines</wrk:Name>
+      <wrk:Id>a57d182a-d0e2-42c9-a2ad-fa856e680dce</wrk:Id>
+      <wrk:SourceId>01762968-ce4d-43d6-96e0-43388b34f6ff</wrk:SourceId>
+      <wrk:StyleName>Custom 1</wrk:StyleName>
+      <wrk:QueryExpression>
+        <wrk:FeatureDefinitions>
+          <wrk:FeatureDefinition>Line</wrk:FeatureDefinition>
+        </wrk:FeatureDefinitions>
+      </wrk:QueryExpression>
+      <wrk:Attributes>
+        <SymbolizeLines>false</SymbolizeLines>
+        <Symbols>TRACK_LINE</Symbols>
+        <LineThickness>0</LineThickness>
+        <ColourBy>State</ColourBy>
+        <MergedColour>
+          <Red>0</Red>
+          <Green>200</Green>
+          <Blue>0</Blue>
+        </MergedColour>
+        <OutdatedColour>
+          <Red>0</Red>
+          <Green>0</Green>
+          <Blue>200</Blue>
+        </OutdatedColour>
+        <ColourMaps>TrackLine</ColourMaps>
+        <DisplayScale>
+          <MinimumScale>0</MinimumScale>
+          <MaximumScale>10000000</MaximumScale>
+        </DisplayScale>
+      </wrk:Attributes>
+    </wrk:Layer>
+    <wrk:Layer xsi:type="wrk:BandSetLayerType">
+      <wrk:Name>SingleBeam_5m</wrk:Name>
+      <wrk:Id>1c14a1f3-9c3a-4f77-92d5-188859cd9aef</wrk:Id>
+      <wrk:SourceId>def98b0d-e9da-4646-8912-29abdcdde4e6</wrk:SourceId>
+      <wrk:Attributes>
+        <DisplayFilter/>
+        <ZAttribute>Depth</ZAttribute>
+        <kShowRejectedPoints>false</kShowRejectedPoints>
+        <PositionType>Grid</PositionType>
+        <QualityLevel>Normal</QualityLevel>
+        <Colour>
+          <ColourMode>0</ColourMode>
+          <ColourBy>Depth</ColourBy>
+          <ColourFile>C:\ProgramData\CARIS\HIPS and SIPS\11.3\colour\Rainbow.cma</ColourFile>
+          <ReverseColours>false</ReverseColours>
+          <MinRange>-196.317001342773</MinRange>
+          <MaxRange>-1.11349558830261</MaxRange>
+          <MakeOutOfRangeTransparent>false</MakeOutOfRangeTransparent>
+          <ForegroundColour>
+            <Red>0</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </ForegroundColour>
+          <BackgroundColour>
+            <Red>255</Red>
+            <Green>255</Green>
+            <Blue>255</Blue>
+          </BackgroundColour>
+          <PixelNormalization>1</PixelNormalization>
+          <Channel1>0</Channel1>
+          <Channel2>1</Channel2>
+          <Channel3>2</Channel3>
+          <Channel4>-1</Channel4>
+        </Colour>
+        <Transparency>0</Transparency>
+        <Drape>(None)</Drape>
+        <DrapingBlend>1</DrapingBlend>
+        <DrawSurface>true</DrawSurface>
+        <VerticalExaggeration>1</VerticalExaggeration>
+        <ApplyShading>Smooth</ApplyShading>
+        <RenderingEngine>Uniform</RenderingEngine>
+        <LightPosition>
+          <Azimuth>45</Azimuth>
+          <Elevation>45</Elevation>
+        </LightPosition>
+        <Ambient>0.2</Ambient>
+        <Diffuse>0.7</Diffuse>
+        <Specular>0.1</Specular>
+        <Glossiness>0.8</Glossiness>
+        <DrawPoints>false</DrawPoints>
+        <PointSize>1</PointSize>
+        <GeometryStyle>Squares</GeometryStyle>
+        <DrawBoundaries>false</DrawBoundaries>
+        <DrawDigits>false</DrawDigits>
+        <EngineeringDigit>false</EngineeringDigit>
+        <EngineeringPrecision>1</EngineeringPrecision>
+        <DigitFont>
+          <Family>Arial</Family>
+          <Bold>false</Bold>
+          <Italic>false</Italic>
+          <Size>10</Size>
+        </DigitFont>
+        <MinimumDisplayScale>10000</MinimumDisplayScale>
+        <QuickDraw>true</QuickDraw>
+        <DrawLegend>false</DrawLegend>
+        <LegendDisplayTitle>true</LegendDisplayTitle>
+        <LegendIncludeName>true</LegendIncludeName>
+        <LegendInterval>0</LegendInterval>
+        <LegendLocation>Left</LegendLocation>
+        <DisplayScale>
+          <MinimumScale>0</MinimumScale>
+          <MaximumScale>2000000000</MaximumScale>
+        </DisplayScale>
+      </wrk:Attributes>
+    </wrk:Layer>
+    <wrk:Layer xsi:type="wrk:GOLayerType">
+      <wrk:Name>Soundings</wrk:Name>
+      <wrk:Id>fe313385-7f8d-4eaf-9cc0-da36a941ce45</wrk:Id>
+      <wrk:SourceId>30469ab2-cf00-4a8e-9c1f-ec2f005c057e</wrk:SourceId>
+      <wrk:Attributes>
+        <FeatureCount>356</FeatureCount>
+        <DisplayEdgeNodes>false</DisplayEdgeNodes>
+        <DisplayScale>
+          <MinimumScale>0</MinimumScale>
+          <MaximumScale>2000000000</MaximumScale>
+        </DisplayScale>
+      </wrk:Attributes>
+    </wrk:Layer>
+    <wrk:Layer xsi:type="wrk:BandSetLayerType">
+      <wrk:Name>Singlebeam_5m_PC</wrk:Name>
+      <wrk:Id>29d82993-8523-48b1-9318-9ec8f9ad7928</wrk:Id>
+      <wrk:SourceId>312b4f01-ae39-4345-80dc-cdc69304bef7</wrk:SourceId>
+      <wrk:Attributes>
+        <DisplayFilter/>
+        <ZAttribute>Depth</ZAttribute>
+        <kShowRejectedPoints>false</kShowRejectedPoints>
+        <QualityLevel>Normal</QualityLevel>
+        <Colour>
+          <ColourMode>0</ColourMode>
+          <ColourBy>Depth</ColourBy>
+          <ColourFile>C:\ProgramData\CARIS\HIPS and SIPS\11.3\colour\Rainbow.cma</ColourFile>
+          <ReverseColours>false</ReverseColours>
+          <MinRange>-196.317001342773</MinRange>
+          <MaxRange>-1.11349558830261</MaxRange>
+          <MakeOutOfRangeTransparent>false</MakeOutOfRangeTransparent>
+          <ForegroundColour>
+            <Red>0</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </ForegroundColour>
+          <BackgroundColour>
+            <Red>255</Red>
+            <Green>255</Green>
+            <Blue>255</Blue>
+          </BackgroundColour>
+          <PixelNormalization>0</PixelNormalization>
+          <Channel1>-1</Channel1>
+          <Channel2>-1</Channel2>
+          <Channel3>-1</Channel3>
+          <Channel4>-1</Channel4>
+        </Colour>
+        <Transparency>0</Transparency>
+        <Drape>(None)</Drape>
+        <DrapingBlend>1</DrapingBlend>
+        <DrawPoints>true</DrawPoints>
+        <PointSize>1</PointSize>
+        <GeometryStyle>Squares</GeometryStyle>
+        <DrawDigits>false</DrawDigits>
+        <EngineeringDigit>false</EngineeringDigit>
+        <EngineeringPrecision>1</EngineeringPrecision>
+        <DigitFont>
+          <Family>Arial</Family>
+          <Bold>false</Bold>
+          <Italic>false</Italic>
+          <Size>10</Size>
+        </DigitFont>
+        <MinimumDisplayScale>10000</MinimumDisplayScale>
+        <QuickDraw>true</QuickDraw>
+        <DrawLegend>false</DrawLegend>
+        <LegendDisplayTitle>true</LegendDisplayTitle>
+        <LegendIncludeName>true</LegendIncludeName>
+        <LegendInterval>0</LegendInterval>
+        <LegendLocation>Left</LegendLocation>
+        <DisplayScale>
+          <MinimumScale>0</MinimumScale>
+          <MaximumScale>2000000000</MaximumScale>
+        </DisplayScale>
+      </wrk:Attributes>
+    </wrk:Layer>
+  </wrk:Layers>
+  <wrk:Styles>
+    <wrk:Style>
+      <wrk:Name>Custom 1</wrk:Name>
+      <wrk:FeatureDefinition>Line</wrk:FeatureDefinition>
+      <wrk:MaxScaleDenominator>10000000</wrk:MaxScaleDenominator>
+    </wrk:Style>
+  </wrk:Styles>
+  <wrk:LayerTree>
+    <wrk:Node xsi:type="wrk:GroupNodeType" Expanded="true">
+      <wrk:Name>Root</wrk:Name>
+      <wrk:Node xsi:type="wrk:GroupNodeType" Expanded="true">
+        <wrk:Name>All Contacts</wrk:Name>
+        <wrk:ContentType>CT_SIPS_CONTACTS</wrk:ContentType>
+        <wrk:Node xsi:type="wrk:LayerNodeType" Visible="true">
+          <wrk:LayerId>495877a3-ac9f-4eba-9b18-0f5022a567a0</wrk:LayerId>
+        </wrk:Node>
+        <wrk:Node xsi:type="wrk:LayerNodeType" Visible="true">
+          <wrk:LayerId>03df692e-8793-4b86-b0bc-837a73908686</wrk:LayerId>
+        </wrk:Node>
+      </wrk:Node>
+      <wrk:Node xsi:type="wrk:GroupNodeType" Expanded="true">
+        <wrk:Name>All Track Lines</wrk:Name>
+        <wrk:ContentType>CT_HIPS_TRACKLINES</wrk:ContentType>
+        <wrk:Node xsi:type="wrk:LayerNodeType" Visible="true">
+          <wrk:LayerId>a57d182a-d0e2-42c9-a2ad-fa856e680dce</wrk:LayerId>
+        </wrk:Node>
+      </wrk:Node>
+      <wrk:Node xsi:type="wrk:LayerNodeType" Visible="true">
+        <wrk:LayerId>1c14a1f3-9c3a-4f77-92d5-188859cd9aef</wrk:LayerId>
+      </wrk:Node>
+      <wrk:Node xsi:type="wrk:LayerNodeType" Visible="true">
+        <wrk:LayerId>fe313385-7f8d-4eaf-9cc0-da36a941ce45</wrk:LayerId>
+      </wrk:Node>
+      <wrk:Node xsi:type="wrk:LayerNodeType" Visible="true">
+        <wrk:LayerId>29d82993-8523-48b1-9318-9ec8f9ad7928</wrk:LayerId>
+      </wrk:Node>
+    </wrk:Node>
+  </wrk:LayerTree>
+</wrk:Workspace>

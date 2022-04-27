@@ -1,0 +1,1234 @@
+{
+    "identification": {
+        "version": "2.0.0"
+    },
+    "processes": [
+        {
+            "definition": {
+                "base": {
+                    "identification": {
+                        "id": "ImportToHIPSHYPACK",
+                        "title": "Hypack RAW, HSX",
+                        "version": "2.0.0"
+                    }
+                }
+            },
+            "identification": {
+                "id": "f8d60e2c-f337-4545-bab1-274686a06b03",
+                "version": "2.0.0"
+            },
+            "log": {
+                "endTime": "2022-02-18T16:23:16Z",
+                "software": {
+                    "title": "CARIS HIPS and SIPS",
+                    "version": "11.3.13 2020-12-18_14-19-35"
+                },
+                "startTime": "2022-02-18T16:23:16Z",
+                "state": "Pending",
+                "user": "Ryan Nguyen (longryan@yorku.ca)"
+            },
+            "parameters": {
+                "ConvertBathymetry": "DUAL_PRIM_SEC",
+                "ConvertSideScan": "NONE",
+                "Destination": "file:///C:/Users/longryan/Desktop/lab3/lab3.hips",
+                "HipsFile": "file:///C:/Users/longryan/Desktop/lab3/lab3.hips",
+                "HoursFromGMT": 0.0,
+                "InputCRS": "WG84",
+                "Inputs": ["file:///C:/Users/longryan/Downloads/1998-213/1998-213/009_1832.bol","file:///C:/Users/longryan/Downloads/1998-213/1998-213/031_2150.bol"],
+                "Metadata": {
+                    "AdditionalComments": "",
+                    "BathySummary": "Tooltype=20\nLine Segments=1\nProfiles=1312\nMin Time (UTC80)=586463586.710000\nMin Time (YYYY JDAY HH:MM:SS)=1998 213 18:32:54\nMax Time (UTC80)=586464305.400000\nMax Time (YYYY JDAY HH:MM:SS)=1998 213 18:44:53\nMin Depth=0.000000\nMax Depth=198.600000\nStatus=1342177280\n",
+                    "Cleanup": "",
+                    "ConversionSummary": "Status=0\nNavigation Filtered=0\nTotal Navigation=685\nAccepted Soundings=3936\nDisabled Beams=0\nDepths Filtered=0\nTotal Depths=3936\nSS Navigation Filtered=0\nTotal SS Navigation=0\nSS Profiles=0\nDepths Filtered (Advanced)=0\nDepths Thinned=0\nDatagrams Skipped=0 (Corrupt)\n",
+                    "DatagramInfo": "",
+                    "NavigationSummary": "Type=Navigation\nLine Segments=1\nRecords=685\nCoordinate Type=LLDG\nMin Time (UTC80)=586463587.650000\nMin Time (YYYY JDAY HH:MM:SS)=1998 213 18:32:55\nMax Time (UTC80)=586464305.510000\nMax Time (YYYY JDAY HH:MM:SS)=1998 213 18:44:53\nMin Latitude=1.192193\nMax Latitude=1.192717\nMin Longitude=-1.905078\nMax Longitude=-1.903419\nStatus=0\nInput Coordinate System=Geographic\n"
+                },
+                "SoundVelocity": "1434 m/s",
+                "VesselFile": "file:///C:/Users/longryan/Downloads/VesselConfig/VesselConfig/Single_Beam_Vessel_Bold.hvf"
+            }
+        },
+        {
+            "definition": {
+                "base": {
+                    "identification": {
+                        "id": "GeoreferenceHIPSBathymetry",
+                        "title": "Georeference Bathymetry",
+                        "version": "2.0.0"
+                    }
+                }
+            },
+            "identification": {
+                "id": "7b3a2111-033d-4d63-a0a4-16af40702715",
+                "version": "2.0.0"
+            },
+            "log": {
+                "endTime": "2022-02-18T16:51:36Z",
+                "software": {
+                    "title": "CARIS HIPS and SIPS",
+                    "version": "11.3.13 2020-12-18_14-19-35"
+                },
+                "startTime": "2022-02-18T16:51:35Z",
+                "state": "Pending",
+                "user": "Ryan Nguyen (longryan@yorku.ca)"
+            },
+            "parameters": {
+                "BeamShift": "NONE",
+                "ComputeErrors": false,
+                "ComputeGPSVerticalAdjustment": false,
+                "ComputeSVC": false,
+                "ComputeTPU": false,
+                "HeaveSource": "HEAVE",
+                "Metadata": {
+                    "NavigationSource": "HDCS.Nav",
+                    "SVCLog": {
+                        "Entry": [],
+                        "Profile": []
+                    },
+                    "VesselConfiguration": {
+                        "DepthConfig": {
+                            "SensorClass": "Swath",
+                            "Transducer": {
+                                "Latency": 0.0,
+                                "NumBeams": 1,
+                                "Number": 1,
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            }
+                        },
+                        "GyroConfig": {
+                            "Applied": false,
+                            "Error": 0.0,
+                            "Latency": 0.0,
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                        },
+                        "NavigationConfig": {
+                            "Latency": 0.0,
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                        },
+                        "Offsets": [],
+                        "SVPConfig": {
+                            "Receiver": {
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            },
+                            "Transmitter": {
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            }
+                        }
+                    }
+                },
+                "NearestDistanceHours": 1,
+                "OutputComponents": false,
+                "ProfileSelectionMethod": "PREVIOUS_IN_TIME",
+                "SSP": true,
+                "SVMeasured": "0 m/s",
+                "SVSurface": "0 m/s",
+                "SmoothHeight": false,
+                "SoundingDatumOffset": "0 m",
+                "SourceGyro": "VESSEL",
+                "SourceHeave": "VESSEL",
+                "SourceNavigation": "VESSEL",
+                "SourcePitch": "VESSEL",
+                "SourceRoll": "VESSEL",
+                "SourceSonar": "VESSEL",
+                "SourceTide": "STATIC",
+                "SweepMaxHeave": "0 m",
+                "SweepMaxPitch": "0 deg",
+                "SweepMaxRoll": "0 deg",
+                "TideMeasured": "0 m",
+                "TideZoning": "0 m",
+                "Update": ["file:///C:/Users/longryan/Desktop/lab3/lab3.hips?Line=009_1832&Line=011_1845"],
+                "UseSSPAsSVP": false,
+                "VehicleDepth": false,
+                "VerticalDatumReference": "NONE",
+                "VerticalOffset": "0 m",
+                "WeightedAverage": false
+            }
+        },
+        {
+            "definition": {
+                "base": {
+                    "identification": {
+                        "id": "GeoreferenceHIPSBathymetry",
+                        "title": "Georeference Bathymetry",
+                        "version": "2.0.0"
+                    }
+                }
+            },
+            "identification": {
+                "id": "36e4d006-8ef8-445a-b083-bc3a9c8dce67",
+                "version": "2.0.0"
+            },
+            "log": {
+                "endTime": "2022-02-18T16:54:40Z",
+                "software": {
+                    "title": "CARIS HIPS and SIPS",
+                    "version": "11.3.13 2020-12-18_14-19-35"
+                },
+                "startTime": "2022-02-18T16:54:38Z",
+                "state": "Pending",
+                "user": "Ryan Nguyen (longryan@yorku.ca)"
+            },
+            "parameters": {
+                "BeamShift": "NONE",
+                "ComputeErrors": false,
+                "ComputeGPSVerticalAdjustment": false,
+                "ComputeSVC": true,
+                "ComputeTPU": false,
+                "HeaveSource": "HEAVE",
+                "Metadata": {
+                    "NavigationSource": "HDCS.Nav",
+                    "SVCLog": {
+                        "Entry": [
+                            {
+                                "MaxTime": "1998-08-01T18:45:05.400000Z",
+                                "MinTime": "1998-08-01T18:33:06.710000Z",
+                                "ProfileTime": "1998-08-01T12:00:12Z"
+                            }
+                        ],
+                        "Method": "Nearest in time",
+                        "Profile": [
+                            {
+                                "Latitude": 0.0,
+                                "Longitude": 0.0,
+                                "Record": [
+                                    {
+                                        "Depth": 0.8,
+                                        "Speed": 1473.0
+                                    },
+                                    {
+                                        "Depth": 1.0,
+                                        "Speed": 1473.0
+                                    },
+                                    {
+                                        "Depth": 2.6,
+                                        "Speed": 1472.8
+                                    },
+                                    {
+                                        "Depth": 4.1,
+                                        "Speed": 1468.3
+                                    },
+                                    {
+                                        "Depth": 5.0,
+                                        "Speed": 1459.6
+                                    },
+                                    {
+                                        "Depth": 5.8,
+                                        "Speed": 1455.7
+                                    },
+                                    {
+                                        "Depth": 6.5,
+                                        "Speed": 1451.0
+                                    },
+                                    {
+                                        "Depth": 7.2,
+                                        "Speed": 1449.1
+                                    },
+                                    {
+                                        "Depth": 7.9,
+                                        "Speed": 1446.9
+                                    },
+                                    {
+                                        "Depth": 8.7,
+                                        "Speed": 1446.4
+                                    },
+                                    {
+                                        "Depth": 9.5,
+                                        "Speed": 1445.7
+                                    },
+                                    {
+                                        "Depth": 10.2,
+                                        "Speed": 1445.7
+                                    },
+                                    {
+                                        "Depth": 11.2,
+                                        "Speed": 1444.5
+                                    },
+                                    {
+                                        "Depth": 12.0,
+                                        "Speed": 1443.8
+                                    },
+                                    {
+                                        "Depth": 12.9,
+                                        "Speed": 1443.0
+                                    },
+                                    {
+                                        "Depth": 13.6,
+                                        "Speed": 1442.3
+                                    },
+                                    {
+                                        "Depth": 14.3,
+                                        "Speed": 1441.6
+                                    },
+                                    {
+                                        "Depth": 14.7,
+                                        "Speed": 1441.3
+                                    },
+                                    {
+                                        "Depth": 15.3,
+                                        "Speed": 1440.4
+                                    },
+                                    {
+                                        "Depth": 16.0,
+                                        "Speed": 1439.9
+                                    },
+                                    {
+                                        "Depth": 17.1,
+                                        "Speed": 1439.2
+                                    },
+                                    {
+                                        "Depth": 18.0,
+                                        "Speed": 1438.7
+                                    },
+                                    {
+                                        "Depth": 19.9,
+                                        "Speed": 1438.0
+                                    },
+                                    {
+                                        "Depth": 21.0,
+                                        "Speed": 1438.0
+                                    },
+                                    {
+                                        "Depth": 22.2,
+                                        "Speed": 1437.8
+                                    },
+                                    {
+                                        "Depth": 23.5,
+                                        "Speed": 1437.3
+                                    },
+                                    {
+                                        "Depth": 24.7,
+                                        "Speed": 1437.0
+                                    },
+                                    {
+                                        "Depth": 25.9,
+                                        "Speed": 1436.6
+                                    },
+                                    {
+                                        "Depth": 27.0,
+                                        "Speed": 1436.1
+                                    },
+                                    {
+                                        "Depth": 28.3,
+                                        "Speed": 1435.6
+                                    },
+                                    {
+                                        "Depth": 29.6,
+                                        "Speed": 1435.4
+                                    },
+                                    {
+                                        "Depth": 30.8,
+                                        "Speed": 1435.4
+                                    },
+                                    {
+                                        "Depth": 32.1,
+                                        "Speed": 1434.9
+                                    },
+                                    {
+                                        "Depth": 34.0,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 35.2,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 36.5,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 37.8,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 39.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 40.2,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 41.6,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 43.7,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 44.8,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 46.1,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 47.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 49.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 50.4,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 51.6,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 52.8,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 54.1,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 55.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 56.9,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 58.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 59.5,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 60.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 61.9,
+                                        "Speed": 1434.7
+                                    }
+                                ],
+                                "Time": "1998-08-01T12:00:12Z"
+                            }
+                        ],
+                        "Source": "C:\\Users\\longryan\\Downloads\\HDCS_Data\\HDCS_Data\\SVP\\sv213a_b.svp"
+                    },
+                    "VesselConfiguration": {
+                        "DepthConfig": {
+                            "SensorClass": "Swath",
+                            "Transducer": {
+                                "Latency": 0.0,
+                                "NumBeams": 1,
+                                "Number": 1,
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            }
+                        },
+                        "GyroConfig": {
+                            "Applied": false,
+                            "Error": 0.0,
+                            "Latency": 0.0,
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                        },
+                        "NavigationConfig": {
+                            "Latency": 0.0,
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                        },
+                        "Offsets": [],
+                        "SVPConfig": {
+                            "Receiver": {
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            },
+                            "Transmitter": {
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            }
+                        }
+                    }
+                },
+                "NearestDistanceHours": 1,
+                "OutputComponents": false,
+                "ProfileSelectionMethod": "NEAREST_IN_TIME",
+                "SSP": true,
+                "SVMeasured": "0 m/s",
+                "SVP": ["file:///C:/Users/longryan/Downloads/HDCS_Data/HDCS_Data/SVP/sv213a_b.svp"],
+                "SVSurface": "0 m/s",
+                "SmoothHeight": false,
+                "SoundingDatumOffset": "0 m",
+                "SourceGyro": "VESSEL",
+                "SourceHeave": "VESSEL",
+                "SourceNavigation": "VESSEL",
+                "SourcePitch": "VESSEL",
+                "SourceRoll": "VESSEL",
+                "SourceSonar": "VESSEL",
+                "SourceTide": "STATIC",
+                "SweepMaxHeave": "0 m",
+                "SweepMaxPitch": "0 deg",
+                "SweepMaxRoll": "0 deg",
+                "TideMeasured": "0 m",
+                "TideZoning": "0 m",
+                "Update": ["file:///C:/Users/longryan/Desktop/lab3/lab3.hips?Line=009_1832&Line=011_1845"],
+                "UseSSPAsSVP": false,
+                "VehicleDepth": false,
+                "VerticalDatumReference": "NONE",
+                "VerticalOffset": "0 m",
+                "WeightedAverage": false
+            }
+        },
+        {
+            "definition": {
+                "base": {
+                    "identification": {
+                        "id": "GeoreferenceHIPSBathymetry",
+                        "title": "Georeference Bathymetry",
+                        "version": "2.0.0"
+                    }
+                }
+            },
+            "identification": {
+                "id": "8420268f-591c-4bea-8e9d-ad24eb4cbd8e",
+                "version": "2.0.0"
+            },
+            "log": {
+                "endTime": "2022-02-18T17:02:17Z",
+                "software": {
+                    "title": "CARIS HIPS and SIPS",
+                    "version": "11.3.13 2020-12-18_14-19-35"
+                },
+                "startTime": "2022-02-18T17:02:14Z",
+                "state": "Pending",
+                "user": "Ryan Nguyen (longryan@yorku.ca)"
+            },
+            "parameters": {
+                "BeamShift": "NONE",
+                "ComputeErrors": false,
+                "ComputeGPSVerticalAdjustment": false,
+                "ComputeSVC": true,
+                "ComputeTPU": false,
+                "HeaveSource": "HEAVE",
+                "Metadata": {
+                    "NavigationSource": "HDCS.Nav",
+                    "SVCLog": {
+                        "Entry": [
+                            {
+                                "MaxTime": "1998-08-01T18:45:05.400000Z",
+                                "MinTime": "1998-08-01T18:33:06.710000Z",
+                                "ProfileTime": "1998-08-01T12:00:12Z"
+                            }
+                        ],
+                        "Method": "Nearest in time",
+                        "Profile": [
+                            {
+                                "Latitude": 0.0,
+                                "Longitude": 0.0,
+                                "Record": [
+                                    {
+                                        "Depth": 0.8,
+                                        "Speed": 1473.0
+                                    },
+                                    {
+                                        "Depth": 1.0,
+                                        "Speed": 1473.0
+                                    },
+                                    {
+                                        "Depth": 2.6,
+                                        "Speed": 1472.8
+                                    },
+                                    {
+                                        "Depth": 4.1,
+                                        "Speed": 1468.3
+                                    },
+                                    {
+                                        "Depth": 5.0,
+                                        "Speed": 1459.6
+                                    },
+                                    {
+                                        "Depth": 5.8,
+                                        "Speed": 1455.7
+                                    },
+                                    {
+                                        "Depth": 6.5,
+                                        "Speed": 1451.0
+                                    },
+                                    {
+                                        "Depth": 7.2,
+                                        "Speed": 1449.1
+                                    },
+                                    {
+                                        "Depth": 7.9,
+                                        "Speed": 1446.9
+                                    },
+                                    {
+                                        "Depth": 8.7,
+                                        "Speed": 1446.4
+                                    },
+                                    {
+                                        "Depth": 9.5,
+                                        "Speed": 1445.7
+                                    },
+                                    {
+                                        "Depth": 10.2,
+                                        "Speed": 1445.7
+                                    },
+                                    {
+                                        "Depth": 11.2,
+                                        "Speed": 1444.5
+                                    },
+                                    {
+                                        "Depth": 12.0,
+                                        "Speed": 1443.8
+                                    },
+                                    {
+                                        "Depth": 12.9,
+                                        "Speed": 1443.0
+                                    },
+                                    {
+                                        "Depth": 13.6,
+                                        "Speed": 1442.3
+                                    },
+                                    {
+                                        "Depth": 14.3,
+                                        "Speed": 1441.6
+                                    },
+                                    {
+                                        "Depth": 14.7,
+                                        "Speed": 1441.3
+                                    },
+                                    {
+                                        "Depth": 15.3,
+                                        "Speed": 1440.4
+                                    },
+                                    {
+                                        "Depth": 16.0,
+                                        "Speed": 1439.9
+                                    },
+                                    {
+                                        "Depth": 17.1,
+                                        "Speed": 1439.2
+                                    },
+                                    {
+                                        "Depth": 18.0,
+                                        "Speed": 1438.7
+                                    },
+                                    {
+                                        "Depth": 19.9,
+                                        "Speed": 1438.0
+                                    },
+                                    {
+                                        "Depth": 21.0,
+                                        "Speed": 1438.0
+                                    },
+                                    {
+                                        "Depth": 22.2,
+                                        "Speed": 1437.8
+                                    },
+                                    {
+                                        "Depth": 23.5,
+                                        "Speed": 1437.3
+                                    },
+                                    {
+                                        "Depth": 24.7,
+                                        "Speed": 1437.0
+                                    },
+                                    {
+                                        "Depth": 25.9,
+                                        "Speed": 1436.6
+                                    },
+                                    {
+                                        "Depth": 27.0,
+                                        "Speed": 1436.1
+                                    },
+                                    {
+                                        "Depth": 28.3,
+                                        "Speed": 1435.6
+                                    },
+                                    {
+                                        "Depth": 29.6,
+                                        "Speed": 1435.4
+                                    },
+                                    {
+                                        "Depth": 30.8,
+                                        "Speed": 1435.4
+                                    },
+                                    {
+                                        "Depth": 32.1,
+                                        "Speed": 1434.9
+                                    },
+                                    {
+                                        "Depth": 34.0,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 35.2,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 36.5,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 37.8,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 39.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 40.2,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 41.6,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 43.7,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 44.8,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 46.1,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 47.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 49.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 50.4,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 51.6,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 52.8,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 54.1,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 55.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 56.9,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 58.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 59.5,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 60.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 61.9,
+                                        "Speed": 1434.7
+                                    }
+                                ],
+                                "Time": "1998-08-01T12:00:12Z"
+                            }
+                        ],
+                        "Source": "C:\\Users\\longryan\\Downloads\\HDCS_Data\\HDCS_Data\\SVP\\sv213a_b.svp"
+                    },
+                    "TideApplied": {
+                        "DirectMethod": {
+                            "Source": "C:\\Users\\longryan\\Downloads\\HDCS_Data\\HDCS_Data\\Tide\\portblackney.cow"
+                        }
+                    },
+                    "VesselConfiguration": {
+                        "DepthConfig": {
+                            "SensorClass": "Swath",
+                            "Transducer": {
+                                "Latency": 0.0,
+                                "NumBeams": 1,
+                                "Number": 1,
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            }
+                        },
+                        "GyroConfig": {
+                            "Applied": false,
+                            "Error": 0.0,
+                            "Latency": 0.0,
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                        },
+                        "NavigationConfig": {
+                            "Latency": 0.0,
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                        },
+                        "Offsets": [],
+                        "SVPConfig": {
+                            "Receiver": {
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            },
+                            "Transmitter": {
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            }
+                        }
+                    }
+                },
+                "NearestDistanceHours": 1,
+                "OutputComponents": false,
+                "ProfileSelectionMethod": "NEAREST_IN_TIME",
+                "SSP": true,
+                "SVMeasured": "0 m/s",
+                "SVP": ["file:///C:/Users/longryan/Downloads/HDCS_Data/HDCS_Data/SVP/sv213a_b.svp"],
+                "SVSurface": "0 m/s",
+                "SmoothHeight": false,
+                "SoundingDatumOffset": "0 m",
+                "SourceGyro": "VESSEL",
+                "SourceHeave": "VESSEL",
+                "SourceNavigation": "VESSEL",
+                "SourcePitch": "VESSEL",
+                "SourceRoll": "VESSEL",
+                "SourceSonar": "VESSEL",
+                "SourceTide": "STATIC",
+                "SweepMaxHeave": "0 m",
+                "SweepMaxPitch": "0 deg",
+                "SweepMaxRoll": "0 deg",
+                "TideFile": "file:///C:/Users/longryan/Downloads/HDCS_Data/HDCS_Data/Tide/portblackney.cow",
+                "TideMeasured": "0 m",
+                "TideZoning": "0 m",
+                "Update": ["file:///C:/Users/longryan/Desktop/lab3/lab3.hips?Line=009_1832&Line=011_1845"],
+                "UseSSPAsSVP": false,
+                "VehicleDepth": false,
+                "VerticalDatumReference": "TIDE",
+                "VerticalOffset": "0 m",
+                "WeightedAverage": false
+            }
+        },
+        {
+            "definition": {
+                "base": {
+                    "identification": {
+                        "id": "GeoreferenceHIPSBathymetry",
+                        "title": "Georeference Bathymetry",
+                        "version": "2.0.0"
+                    }
+                }
+            },
+            "identification": {
+                "id": "c7b5406b-4517-49ae-b59f-be1d56e455f1",
+                "version": "2.0.0"
+            },
+            "log": {
+                "endTime": "2022-02-18T17:02:49Z",
+                "software": {
+                    "title": "CARIS HIPS and SIPS",
+                    "version": "11.3.13 2020-12-18_14-19-35"
+                },
+                "startTime": "2022-02-18T17:02:46Z",
+                "state": "Pending",
+                "user": "Ryan Nguyen (longryan@yorku.ca)"
+            },
+            "parameters": {
+                "BeamShift": "NONE",
+                "ComputeErrors": false,
+                "ComputeGPSVerticalAdjustment": false,
+                "ComputeSVC": true,
+                "ComputeTPU": false,
+                "HeaveSource": "HEAVE",
+                "Metadata": {
+                    "NavigationSource": "HDCS.Nav",
+                    "SVCLog": {
+                        "Entry": [
+                            {
+                                "MaxTime": "1998-08-01T18:45:05.400000Z",
+                                "MinTime": "1998-08-01T18:33:06.710000Z",
+                                "ProfileTime": "1998-08-01T12:00:12Z"
+                            }
+                        ],
+                        "Method": "Nearest in time",
+                        "Profile": [
+                            {
+                                "Latitude": 0.0,
+                                "Longitude": 0.0,
+                                "Record": [
+                                    {
+                                        "Depth": 0.8,
+                                        "Speed": 1473.0
+                                    },
+                                    {
+                                        "Depth": 1.0,
+                                        "Speed": 1473.0
+                                    },
+                                    {
+                                        "Depth": 2.6,
+                                        "Speed": 1472.8
+                                    },
+                                    {
+                                        "Depth": 4.1,
+                                        "Speed": 1468.3
+                                    },
+                                    {
+                                        "Depth": 5.0,
+                                        "Speed": 1459.6
+                                    },
+                                    {
+                                        "Depth": 5.8,
+                                        "Speed": 1455.7
+                                    },
+                                    {
+                                        "Depth": 6.5,
+                                        "Speed": 1451.0
+                                    },
+                                    {
+                                        "Depth": 7.2,
+                                        "Speed": 1449.1
+                                    },
+                                    {
+                                        "Depth": 7.9,
+                                        "Speed": 1446.9
+                                    },
+                                    {
+                                        "Depth": 8.7,
+                                        "Speed": 1446.4
+                                    },
+                                    {
+                                        "Depth": 9.5,
+                                        "Speed": 1445.7
+                                    },
+                                    {
+                                        "Depth": 10.2,
+                                        "Speed": 1445.7
+                                    },
+                                    {
+                                        "Depth": 11.2,
+                                        "Speed": 1444.5
+                                    },
+                                    {
+                                        "Depth": 12.0,
+                                        "Speed": 1443.8
+                                    },
+                                    {
+                                        "Depth": 12.9,
+                                        "Speed": 1443.0
+                                    },
+                                    {
+                                        "Depth": 13.6,
+                                        "Speed": 1442.3
+                                    },
+                                    {
+                                        "Depth": 14.3,
+                                        "Speed": 1441.6
+                                    },
+                                    {
+                                        "Depth": 14.7,
+                                        "Speed": 1441.3
+                                    },
+                                    {
+                                        "Depth": 15.3,
+                                        "Speed": 1440.4
+                                    },
+                                    {
+                                        "Depth": 16.0,
+                                        "Speed": 1439.9
+                                    },
+                                    {
+                                        "Depth": 17.1,
+                                        "Speed": 1439.2
+                                    },
+                                    {
+                                        "Depth": 18.0,
+                                        "Speed": 1438.7
+                                    },
+                                    {
+                                        "Depth": 19.9,
+                                        "Speed": 1438.0
+                                    },
+                                    {
+                                        "Depth": 21.0,
+                                        "Speed": 1438.0
+                                    },
+                                    {
+                                        "Depth": 22.2,
+                                        "Speed": 1437.8
+                                    },
+                                    {
+                                        "Depth": 23.5,
+                                        "Speed": 1437.3
+                                    },
+                                    {
+                                        "Depth": 24.7,
+                                        "Speed": 1437.0
+                                    },
+                                    {
+                                        "Depth": 25.9,
+                                        "Speed": 1436.6
+                                    },
+                                    {
+                                        "Depth": 27.0,
+                                        "Speed": 1436.1
+                                    },
+                                    {
+                                        "Depth": 28.3,
+                                        "Speed": 1435.6
+                                    },
+                                    {
+                                        "Depth": 29.6,
+                                        "Speed": 1435.4
+                                    },
+                                    {
+                                        "Depth": 30.8,
+                                        "Speed": 1435.4
+                                    },
+                                    {
+                                        "Depth": 32.1,
+                                        "Speed": 1434.9
+                                    },
+                                    {
+                                        "Depth": 34.0,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 35.2,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 36.5,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 37.8,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 39.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 40.2,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 41.6,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 43.7,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 44.8,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 46.1,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 47.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 49.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 50.4,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 51.6,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 52.8,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 54.1,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 55.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 56.9,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 58.1,
+                                        "Speed": 1434.4
+                                    },
+                                    {
+                                        "Depth": 59.5,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 60.6,
+                                        "Speed": 1434.2
+                                    },
+                                    {
+                                        "Depth": 61.9,
+                                        "Speed": 1434.7
+                                    }
+                                ],
+                                "Time": "1998-08-01T12:00:12Z"
+                            }
+                        ],
+                        "Source": "C:\\Users\\longryan\\Downloads\\HDCS_Data\\HDCS_Data\\SVP\\sv213a_b.svp"
+                    },
+                    "TideApplied": {
+                        "DirectMethod": {
+                            "Source": "C:\\Users\\longryan\\Downloads\\HDCS_Data\\HDCS_Data\\Tide\\portblackney.cow"
+                        }
+                    },
+                    "VesselConfiguration": {
+                        "DepthConfig": {
+                            "SensorClass": "Swath",
+                            "Transducer": {
+                                "Latency": 0.0,
+                                "NumBeams": 1,
+                                "Number": 1,
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            }
+                        },
+                        "GyroConfig": {
+                            "Applied": false,
+                            "Error": 0.0,
+                            "Latency": 0.0,
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                        },
+                        "NavigationConfig": {
+                            "Latency": 0.0,
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                        },
+                        "Offsets": [],
+                        "SVPConfig": {
+                            "Receiver": {
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            },
+                            "Transmitter": {
+                                "Pitch": 0.0,
+                                "Roll": 0.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Yaw": 0.0,
+                                "Z": 0.0
+                            }
+                        }
+                    }
+                },
+                "NearestDistanceHours": 1,
+                "OutputComponents": false,
+                "ProfileSelectionMethod": "NEAREST_IN_TIME",
+                "SSP": true,
+                "SVMeasured": "0 m/s",
+                "SVP": ["file:///C:/Users/longryan/Downloads/HDCS_Data/HDCS_Data/SVP/sv213a_b.svp"],
+                "SVSurface": "0 m/s",
+                "SmoothHeight": false,
+                "SoundingDatumOffset": "0 m",
+                "SourceGyro": "VESSEL",
+                "SourceHeave": "VESSEL",
+                "SourceNavigation": "VESSEL",
+                "SourcePitch": "VESSEL",
+                "SourceRoll": "VESSEL",
+                "SourceSonar": "VESSEL",
+                "SourceTide": "STATIC",
+                "SweepMaxHeave": "0 m",
+                "SweepMaxPitch": "0 deg",
+                "SweepMaxRoll": "0 deg",
+                "TideFile": "file:///C:/Users/longryan/Downloads/HDCS_Data/HDCS_Data/Tide/portblackney.cow",
+                "TideMeasured": "0 m",
+                "TideZoning": "0 m",
+                "Update": ["file:///C:/Users/longryan/Desktop/lab3/lab3.hips?Line=009_1832&Line=011_1845"],
+                "UseSSPAsSVP": false,
+                "VehicleDepth": false,
+                "VerticalDatumReference": "TIDE",
+                "VerticalOffset": "0 m",
+                "WeightedAverage": false
+            }
+        }
+    ]
+}

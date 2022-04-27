@@ -1,0 +1,245 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>lab1</title><meta name="generator" content="MATLAB 9.10"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2022-01-20"><meta name="DC.source" content="lab1.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">% Q3</span>
+temp = [34.26 34.26 34.26 34.2 33.35 32.25 31.43 31.39 <span class="keyword">...</span>
+    31.14 27.49 25.53 21.88 21.85];
+
+sal = [31.67 33.46 33.46 33.2 33.02 32.87 32.69 32.47 <span class="keyword">...</span>
+    31.33 30.28 30.04 31.15 31.08];
+
+dep = [0 10 20 85 150 175 300 550 725 1150 1200 1500 2000];
+
+figure(1)
+plot(temp, dep)
+set(gca, <span class="string">'YDir'</span>,<span class="string">'reverse'</span>)
+set(gca, <span class="string">'XAxisLocation'</span>, <span class="string">'top'</span>)
+title(<span class="string">'Temperature Profile'</span>)
+xlabel(<span class="string">'Temperature (&deg;C)'</span>)
+ylabel(<span class="string">'Depth (m)'</span>)
+
+annotation(figure(1),<span class="string">'textbox'</span>,<span class="keyword">...</span>
+    [0.131208333333333 0.315680166147456 0.773479166666667 0.313603322949117],<span class="keyword">...</span>
+    <span class="string">'String'</span>,{<span class="string">'Thermocline Region'</span>},<span class="keyword">...</span>
+    <span class="string">'FontSize'</span>,48,<span class="keyword">...</span>
+    <span class="string">'FitBoxToText'</span>,<span class="string">'off'</span>,<span class="keyword">...</span>
+    <span class="string">'BackgroundColor'</span>,[1 0.411764705882353 0.16078431372549], <span class="keyword">...</span>
+    <span class="string">'FaceAlpha'</span>, 0.5);
+
+figure(2)
+plot(sal, dep)
+set(gca, <span class="string">'YDir'</span>,<span class="string">'reverse'</span>)
+set(gca, <span class="string">'XAxisLocation'</span>, <span class="string">'top'</span>)
+title(<span class="string">'Salinity Profile'</span>)
+xlabel(<span class="string">'Salinity (ppt)'</span>)
+ylabel(<span class="string">'Depth (m)'</span>)
+
+annotation(figure(2),<span class="string">'textbox'</span>,<span class="keyword">...</span>
+    [0.130729166666667 0.435098650051921 0.775520833333333 0.49221183800623],<span class="keyword">...</span>
+    <span class="string">'String'</span>,{<span class="string">'Halocline Region'</span>},<span class="keyword">...</span>
+    <span class="string">'FontSize'</span>,48,<span class="keyword">...</span>
+    <span class="string">'FitBoxToText'</span>,<span class="string">'off'</span>,<span class="keyword">...</span>
+    <span class="string">'BackgroundColor'</span>,[1 0.411764705882353 0.16078431372549], <span class="keyword">...</span>
+    <span class="string">'FaceAlpha'</span>, 0.5);
+
+
+<span class="comment">% Q4</span>
+x = [];
+<span class="keyword">for</span> i = 1:13
+    <span class="keyword">if</span> temp(i) &gt;= -2 &amp;&amp; temp(i) &lt;= 24.5 &amp;&amp; dep(i) &gt;= 0 &amp;&amp; dep(i) &lt;= 1000 &amp;&amp; sal(i) &gt;= 30 &amp;&amp; sal(i) &lt;= 42
+        x(1,i) = 1492.9 + 3*(temp(i)-10) - 0.006*(temp(i)-10)^2 - 0.04*(temp(i)-18)^2 <span class="keyword">...</span>
+            + 1.2*(sal(i)-35) - 0.01*(temp(i)-18)*(sal(i)-35) + 0.016*dep(i);
+
+        x(2,i) = 1;
+
+    <span class="keyword">elseif</span> temp(i) &gt;= 0 &amp;&amp; temp(i) &lt;= 35 &amp;&amp; dep(i) &gt;= 0 &amp;&amp; dep(i) &lt;= 1000 &amp;&amp; sal(i) &gt;= 0 &amp;&amp; sal(i) &lt;= 45
+        x(1,i) = 1449.2 + 4.6*temp(i) - 0.055*temp(i)^2 + 0.00029*temp(i)^3 + <span class="keyword">...</span>
+            (1.34 - 0.01*temp(i))*(sal(i)-35) + 0.016*dep(i);
+
+        x(2,i) = 2;
+
+    <span class="keyword">elseif</span> temp(i) &gt;= 0 &amp;&amp; temp(i) &lt;= 30 &amp;&amp; dep(i) &gt;= 0 &amp;&amp; dep(i) &lt;= 8000 &amp;&amp; sal(i) &gt;= 30 &amp;&amp; sal(i) &lt;= 40
+        x(1,i) = 1448.96 + 4.591*temp(i) - 0.05304*temp(i)^2 + 0.0002374*temp(i)^3 + <span class="keyword">...</span>
+            1.34*(sal(i)-35) + 0.0163*dep(i) + 1.675*10^-7*dep(i)^2 - <span class="keyword">...</span>
+            0.01025*temp(i)*(sal(i)-35) - 7.139*10^-13*temp(i)*dep(i)^3;
+
+        x(2,i) = 3;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+figure(3)
+plot(x(1,:), dep)
+set(gca, <span class="string">'YDir'</span>,<span class="string">'reverse'</span>)
+set(gca, <span class="string">'XAxisLocation'</span>, <span class="string">'top'</span>)
+title(<span class="string">'Speed of Sound in Sea Water'</span>)
+xlabel(<span class="string">'Mean Sound Speed (m/s)'</span>)
+ylabel(<span class="string">'Depth (m)'</span>)
+
+c = x(1,:);
+
+gi = [];
+ci = [];
+<span class="keyword">for</span> i = 1:12
+    gi(i) = (c(i+1)-c(i)) / (dep(i+1)-dep(i));
+    ci(i) = c(i+1) / c(i);
+
+    bot(i) = (1/gi(i))*log(ci(i));
+<span class="keyword">end</span>
+
+ch = 2000 / sum(bot);
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2021a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% Q3
+temp = [34.26 34.26 34.26 34.2 33.35 32.25 31.43 31.39 ...
+    31.14 27.49 25.53 21.88 21.85];
+
+sal = [31.67 33.46 33.46 33.2 33.02 32.87 32.69 32.47 ...
+    31.33 30.28 30.04 31.15 31.08];
+
+dep = [0 10 20 85 150 175 300 550 725 1150 1200 1500 2000];
+
+figure(1)
+plot(temp, dep)
+set(gca, 'YDir','reverse')
+set(gca, 'XAxisLocation', 'top')
+title('Temperature Profile')
+xlabel('Temperature (°C)')
+ylabel('Depth (m)')
+
+annotation(figure(1),'textbox',...
+    [0.131208333333333 0.315680166147456 0.773479166666667 0.313603322949117],...
+    'String',{'Thermocline Region'},...
+    'FontSize',48,...
+    'FitBoxToText','off',...
+    'BackgroundColor',[1 0.411764705882353 0.16078431372549], ...
+    'FaceAlpha', 0.5);
+
+figure(2)
+plot(sal, dep)
+set(gca, 'YDir','reverse')
+set(gca, 'XAxisLocation', 'top')
+title('Salinity Profile')
+xlabel('Salinity (ppt)')
+ylabel('Depth (m)')
+
+annotation(figure(2),'textbox',...
+    [0.130729166666667 0.435098650051921 0.775520833333333 0.49221183800623],...
+    'String',{'Halocline Region'},...
+    'FontSize',48,...
+    'FitBoxToText','off',...
+    'BackgroundColor',[1 0.411764705882353 0.16078431372549], ...
+    'FaceAlpha', 0.5);
+
+
+% Q4
+x = [];
+for i = 1:13
+    if temp(i) >= -2 && temp(i) <= 24.5 && dep(i) >= 0 && dep(i) <= 1000 && sal(i) >= 30 && sal(i) <= 42
+        x(1,i) = 1492.9 + 3*(temp(i)-10) - 0.006*(temp(i)-10)^2 - 0.04*(temp(i)-18)^2 ...
+            + 1.2*(sal(i)-35) - 0.01*(temp(i)-18)*(sal(i)-35) + 0.016*dep(i);
+        
+        x(2,i) = 1;
+        
+    elseif temp(i) >= 0 && temp(i) <= 35 && dep(i) >= 0 && dep(i) <= 1000 && sal(i) >= 0 && sal(i) <= 45
+        x(1,i) = 1449.2 + 4.6*temp(i) - 0.055*temp(i)^2 + 0.00029*temp(i)^3 + ...
+            (1.34 - 0.01*temp(i))*(sal(i)-35) + 0.016*dep(i);
+        
+        x(2,i) = 2;
+        
+    elseif temp(i) >= 0 && temp(i) <= 30 && dep(i) >= 0 && dep(i) <= 8000 && sal(i) >= 30 && sal(i) <= 40
+        x(1,i) = 1448.96 + 4.591*temp(i) - 0.05304*temp(i)^2 + 0.0002374*temp(i)^3 + ...
+            1.34*(sal(i)-35) + 0.0163*dep(i) + 1.675*10^-7*dep(i)^2 - ...
+            0.01025*temp(i)*(sal(i)-35) - 7.139*10^-13*temp(i)*dep(i)^3;
+        
+        x(2,i) = 3;
+    end
+end
+
+figure(3)
+plot(x(1,:), dep)
+set(gca, 'YDir','reverse')
+set(gca, 'XAxisLocation', 'top')
+title('Speed of Sound in Sea Water')
+xlabel('Mean Sound Speed (m/s)')
+ylabel('Depth (m)')
+
+c = x(1,:);
+
+gi = [];
+ci = [];
+for i = 1:12
+    gi(i) = (c(i+1)-c(i)) / (dep(i+1)-dep(i));
+    ci(i) = c(i+1) / c(i);
+    
+    bot(i) = (1/gi(i))*log(ci(i));
+end
+
+ch = 2000 / sum(bot);
+##### SOURCE END #####
+--></body></html>
